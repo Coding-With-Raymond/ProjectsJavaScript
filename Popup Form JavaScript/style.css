@@ -1,0 +1,98 @@
+:root{
+    --modal-duration: 1s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ccc;
+    font-family: sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.btn-login{
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+}
+
+.modalContainer{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+}
+
+.modalContent{
+    padding: 20px;
+}
+
+.modalForm div{
+    margin: 20px 0;
+}
+
+.modalForm label{
+    display: block;
+    margin-bottom: 6px;
+}
+
+.modalForm .formInput{
+    padding: 8px;
+    width: 100%;
+}
+
+.btn-close{
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modalContainer .btn-submit{
+    padding: 10px 30px;
+    font-weight: bold;
+    background: crimson;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+}
+
+.modalContainer.showModal{
+    display: block;
+}
+
