@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    position: relative;
+    min-height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+input{
+    outline: none;
+    background: none;
+    border: none;
+    width: 90%;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.eyeContainer{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eyeIcon{
+    font-family: 20px;
+    color: #777;
+    transition: 0.2s ease;
+}
+
+#eyeIcon:hover{
+    color: brown;
+    cursor: pointer;
+}
